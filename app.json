@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "minishell",
+    "slug": "minishell",
+    "version": "0.1.0",
+    "orientation": "default",
+    "userInterfaceStyle": "dark",
+    "scheme": "minishell",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.minishell.mobile"
+    },
+    "android": {
+      "package": "app.minishell.mobile",
+      "softwareKeyboardLayoutMode": "resize"
+    },
+    "web": {
+      "bundler": "metro",
+      "name": "minishell — aperçu"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      "expo-status-bar"
+    ],
+    "experiments": {
+      "tsconfigPaths": true
+    }
+  }
+}

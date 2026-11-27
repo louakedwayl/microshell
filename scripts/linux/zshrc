@@ -1,0 +1,14 @@
+export ZSH=/root/.oh-my-zsh
+ZSH_THEME=robbyrussell
+plugins=(git)
+zstyle ':omz:update' mode disabled
+DISABLE_AUTO_TITLE=true
+DISABLE_UNTRACKED_FILES_DIRTY=true
+ZSH_DISABLE_COMPFIX=true
+source "$ZSH/oh-my-zsh.sh"
+PROMPT='%F{green}➜%f  %F{cyan}%~%f $(git_prompt_info)'
+printf '\033]0;minishell\007'
+if [[ -z "$MINISHELL_READY" ]]; then
+    export MINISHELL_READY=1
+    printf '\033]777;minishell-ready\007'
+fi

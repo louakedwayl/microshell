@@ -1,0 +1,17 @@
+node_modules/
+.expo/
+dist/
+web-build/
+ios/
+android/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.keystore
+*.p12
+*.mobileprovision
+.DS_Store
+coverage/
+test-results/
+playwright-report/
